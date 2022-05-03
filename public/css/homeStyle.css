@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-decoration: none;
+}
+
+.screenContainer {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.leftContainerDiv {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  height: 100vh;
+  align-items: center;
+  background-color: black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  align-items: center;
+
+  padding-left: 2vw;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  left: 0;
+  position: fixed;
+  align-self: flex-start;
+
+  transition: 0.5s ease-in;
+}
+.leftContainerDiv:hover {
+  width: 21.5%;
+  align-items: flex-start;
+  /* padding-left: 0.5vw; */
+
+  left: -8.5vw;
+  position: fixed;
+  align-items: flex-start;
+
+  /* padding-left: 15px; */
+}
+
+.tileOption {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+
+  padding: 0.5vw;
+}
+.tileOption:hover {
+  color: black;
+}
+
+.left_aTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 120%;
+}
+.left_aTag:hover {
+    background-color: rgb(73, 43, 43);
+}
+
+.imageIcon {
+  margin: 0.1vw;
+  max-height: 3vw;
+  max-width: 3vw;
+  border-radius: 6px;
+  margin-left: 6.5vw;
+  margin-right: 2vw;
+  padding: 0.15vw;
+
+
+  background-color: antiquewhite;
+}
+
+.linkText {
+  padding-left: 1.25vw;
+  color: whitesmoke;
+}
+
+.leftPaddingDiv {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 10%;
+}
+
+.middleContainerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  width: 70%;
+}
+.middleBodyTopHeading {
+    padding: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+    height: 10vh;
+}
+.firstPageContent {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 2vw;
+    margin: 1vh;
+
+    height: 50vh;
+    width: 70%;
+
+    background-color: grey;
+}
+.firstPageLeftDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.firstPageRightDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.rightPaddingDiv {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 10%;
+}
+
+.rightContainerDiv {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  height: 100vh;
+  align-items: center;
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  right: 0;
+  position: fixed;
+  align-items: flex-start;
+
+  transition: 0.5s ease-in;
+}
+.rightContainerDiv:hover {
+  width: 15%;
+  align-items: flex-start;
+  padding-left: 10px;
+
+  right: 0;
+  position: fixed;
+  align-items: flex-start;
+}

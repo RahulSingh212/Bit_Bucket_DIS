@@ -1,0 +1,24 @@
+{
+  "name": "bit_bucket_dis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cjs": "^0.0.11",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "mjs": "^1.0.0",
+    "nodemon": "^2.0.16",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "requests": "^0.3.0",
+    "require": "^2.4.20"
+  }
+}
