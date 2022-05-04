@@ -255,6 +255,7 @@ h1 {
 
 .main {
   padding: 30px 20px;
+  height: 100vh;
 }
 
 .footer-link {
@@ -278,7 +279,6 @@ a:hover {
 .contest_table {
   border-collapse: collapse;
   font-size: 0.9em;
-  min-width: 400px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -287,18 +287,19 @@ a:hover {
 .contest_table th {
   background-color: #11999E;
   color: white;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 }
 
 .contest_table tr {
   border-bottom: 1px solid #dddddd;
+  text-align: center;
 }
 
 .contest_table tr:nth-of-type(odd) {
   background-color: #EAF6F6
 }
-.contest_table th, .contest_table td {
+.contest_table th{
   padding: 18px 20px;
 }
 

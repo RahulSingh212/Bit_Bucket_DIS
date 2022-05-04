@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bit Bucket</title>
     <link rel="stylesheet" href="./css/profileStyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
     <div class="screenContainer">
@@ -58,10 +59,50 @@
             <div class="middleBodyTopHeading">
                 <h1>Profile</h1>
             </div>
+
+            <div class="codeforcesUserName">
+                <div>
+                    <h3>CodeForces Username: </h3>
+                </div>
+                <div>
+                    <textarea name="Username" id="cdUserNameTF" class="codeForcesUserNameTF" cols="40" rows="1"></textarea>
+                </div>
+                <div class="acceptUserNameContainer">
+                    <button class="acceptBtn" id="acceptCFuserNameBtn">Enter</button>
+                </div>
+            </div>
+
+            <div class="userInfoContainer" id="codeForceDivContainer">
+                <div class="cfRowTile makeRowAlignment" id="cfUserName">
+                    <h4>Username: </h4>
+                    <p id="pCFuserName"></p>
+                </div>
+                <div class="cfRowTile makeRowAlignment" id="cfNumberOfContests">
+                    <h4>Number of Contests : </h4>
+                    <p id="pCFnumberOfContests"></p>
+                </div>
+                <div class="cfRowTile makeRowAlignment" id="cfHighestRating">
+                    <h4>Highest Rating: </h4>
+                    <p id="pCFhigestRating"></p>
+                </div>
+                <div class="cfRowTile makeRowAlignment" id="cfHighestGlobalRank">
+                    <h4>Best Global Rank: </h4>
+                    <p id="pCFbestGlobalRank"></p>
+                </div>
+                <div class="cfRowTile makeRowAlignment" id="cfNumberOfProblemsSolved">
+                    <h4>Number of Problems Solved: </h4>
+                    <p id="pCFtotalProblemsSolved">0</p>
+                </div>
+            </div>
+
+            <div class="chartDivContainer">
+                <canvas id="myChart" class="userProgressChart"></canvas>
+            </div>
+            
         </div>
         <div class="rightPaddingDiv"></div>
         <div class="rightContainerDiv"></div>
     </div>
 </body>
-{{!-- <script src="./js/homeScript.js"></script> --}}
+<script src="./js/profileScript.js"></script>
 </html>

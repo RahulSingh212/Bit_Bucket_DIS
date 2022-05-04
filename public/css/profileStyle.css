@@ -150,4 +150,61 @@
     position: fixed;
     align-items: flex-start;
   }
+
   
+/* //////////////////////////////////////////////////////////// */
+.hideDisplay {
+  display: none;
+}
+.makeRowAlignment {
+  display: flex;
+  flex-direction: row;
+}
+
+.codeforcesUserName {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 8vh;
+  background-color: rgb(232, 219, 219);
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.5vw;
+
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+  margin: 2vh;
+  margin-bottom: 5vh;
+}
+
+.userInfoContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  background-color: rgb(205, 225, 205);
+
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+  margin: 2vh;
+}
+
+.chartDivContainer {
+  width: 80%;
+  padding-bottom: 5vh;
+}
+
+.userProgressChart {
+  width: 80%;
+}

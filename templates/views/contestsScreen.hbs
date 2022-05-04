@@ -80,24 +80,25 @@
                   <tr>
                     <th>
                       <input type="checkbox" id="less_than_1hr" name="less_than_1hr" value="less_than_1hr">
-                      <label for="Less_than_1hr"> <= 1hr </label><br>
+                      <label for="Less_than_1hr"> Less than 2hr </label><br>
                     </th>
                     <th>
                       <input type="checkbox" id="less_than_2hr" name="less_than_2hr" value="less_than_2hr">
-                      <label for="Less_than_2hr"> <= 2hrs</label><br>
+                      <label for="Less_than_2hr"> Less than 3hrs</label><br>
                     </th>
                     <th>
                       <input type="checkbox" id="less_than_3hr" name="less_than_3hr" value="less_than_3hr">
-                      <label for="Less_than_1hr"> <= 3hrs</label><br>
+                      <label for="Less_than_1hr"> Less than 1day</label><br>
                     </th>
                     <th>
                       <input type="checkbox" id="greater_than_3hr" name="greater_than_3hr" value="greater_than_3hr">
-                      <label for="Less_than_1hr"> >= 3hrs</label><br>
+                      <label for="Less_than_1hr"> Less than 2days</label><br>
                     </th>
                   </tr>
                 </table>
               </div>
             </div>
+
             <div class="organizer">
               <a href="#" class = "parameters_anchor" >Organizer:</a>
               <div class="organizer_parameters">
@@ -116,14 +117,14 @@
                       <label for="codechef"> Codechef</label><br>
                     </th>
                     <th>
-                      <input type="checkbox" id="google" name="google" value="google">
-                      <label for="google"> Google </label><br>
+                      <input type="checkbox" id="leetCode" name="leetCode" value="leetCode">
+                      <label for="leetCode"> LeetCode </label><br>
                     </th>
                   </tr>
                 </table>
               </div>
             </div>
-            <div class="division">
+            {{!-- <div class="division">
               <a href="#" class = "parameters_anchor">Division:</a>
               <div class="division_parameters">
                 <table = "filter_table">
@@ -147,9 +148,9 @@
                   </tr>
                 </table>
               </div>
-            </div>
+            </div> --}}
 
-            <div class="applyContainer">
+            <div class="applyContainer" id="applyFilterButton">
                 <button type="button" class="apply">Apply</button>
             </div>
           </div>
@@ -159,16 +160,15 @@
       <div class="middle_container" id="contestMainDiv">
         <table style="width:100%" class="contest_table" id="contestMainTable">
           <tr>
-            <th>Contest Name</th>
-            <th>Date</th>
-            <th>Duration</th>
-            <th>Organizer</th>
+            <th id="sortByContestName">Contest Name</th>
+            <th id="sortByDate">Date</th>
+            <th id="sortByDuration">Duration</th>
+            <th id="sortByOrganizerName">Organizer</th>
             <th>Starts In</th>
-            <th>Division</th>
             <th>Calendar</th>
             <th>Redirect</th>
           </tr>
-          <tr>
+          {{!-- <tr>
             <td>Atcoder Beginner Contest</td>
             <td>25-April-2022</td>
             <td>100 min</td>
@@ -247,17 +247,17 @@
             <td>Div-3</td>
             <td>Link</td>
             <td>Link</td>
-          </tr>
+          </tr> --}}
         </table>
       </div>
     </div>
 
-    <div class="bottom_container">
+    {{!-- <div class="bottom_container">
       <a class="footer-link" href="https://www.linkedin.com/in/kunalsrv20/">LinkedIn</a>
       <a class="footer-link" href="https://twitter.com/kunalsrv20">Twitter</a>
       <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
       <p class="copyright">© BitBucket</p>
-    </div>
+    </div> --}}
 
     </div>
         <div class="rightPaddingDiv"></div>

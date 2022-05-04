@@ -1,5 +1,4 @@
 // const { response } = require('express');
-
 let thePath = require('path');
 let theRequest = require('request');
 let theExpress = require('express');
@@ -25,7 +24,7 @@ theHbs.registerPartials(partialsFolderDirectoryPath);
 // Rendering the Pages
 app.use(theExpress.static(homePageDirectoryPath));
 
-let contestList = [123];
+let contestList;
 
 // // Continuous Progress in the raing of the User (API Call)
 // theHttps.get('https://codeforces.com/api/user.rating?handle=rahulsinghrs20&api_key=a8f157ea3ef4ca3eb0ab6a66dcd3869c0bc7f55c&time=1648398608apiSig=123456183ab8aa0fa69ae43786ea2a523013489d16c1cbdc149a609f5d88a75cf4cf17ad20a0b7a73637d1c5c8c0211f24968b38b551dda7b89550b28f8dbdca6dffb8', (response) => {
@@ -76,20 +75,32 @@ let contestList = [123];
 //     console.log("ErrorVal: " + errorVal.message);
 // });
 
-module.exports = {
-    contestList
-};
 
 
-let url = 'https://clist.by/api/v1/contest/?username=ashishkamathi&api_key=03432ebf540ae8ced0bf78518b92d8a5a787e788&start__lt=2022-05-01%2006:00:00.000000&end__gt=2022-03-01%2006:00:00.000000&order_by=start&duration__lt=999999';
-theRequest({url: url, json:true }, (errorVal, response) => {
-    if (errorVal) {
-        console.log('Unable to fetch the Data');
-    }
-    else {
-        console.log(response.body.objects);
-    }
-});
+// const axios = require('axios')
+
+// axios
+// 	.get('https://www.reddit.com/r/programming.json')
+// 	.then((response) => {
+// 		console.log(response)
+// 	})
+// 	.catch((error) => {
+// 		console.error(error)
+// 	});
+
+
+
+// let url = 'https://clist.by/api/v1/contest/?username=ashishkamathi&api_key=03432ebf540ae8ced0bf78518b92d8a5a787e788&start__lt=2022-05-01%2006:00:00.000000&end__gt=2022-03-01%2006:00:00.000000&order_by=start&duration__lt=999999';
+// theRequest({ url: url, json:true }, (errorVal, response) => {
+//     if (errorVal) {
+//         console.log('Unable to fetch the Data');
+//     }
+//     else {
+//         contestList = JSON.stringify(response.body.objects);
+//         // console.log(response.body.objects);
+//         console.log(JSON.parse(contestList));
+//     }
+// });
 
 // Home Screen
 app.get('/', (request, response) => {
